@@ -1,0 +1,423 @@
+/*header*/
+
+header {
+    background: linear-gradient(to bottom, #28434a, #cee1e5);
+}
+
+.container_logo p {
+    transition: 1s;
+    text-shadow: 0px 0px 10px white;
+}
+
+.container_logo p:hover {
+    box-shadow: 0px 0px 10px 3px black;
+    scale: 1.1;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    padding: 10px;
+    margin: 10px 0px 0px 0px;
+    border-radius: 50%;
+}
+
+.nav_anclas {
+    color: black;
+    text-decoration: none;
+}
+
+.nav_anclas:hover {
+    color: white;
+    text-shadow: 0px 0px 9px black;
+}
+
+.container_button_carrito {
+    color: black;
+}
+
+.container_button_carrito:hover {
+    color: white;
+}
+
+
+/*section*/
+
+.container_inicio {
+    background: linear-gradient(to top, #cee1e5, #28434a50, #cee1e5);
+    padding-top: 75px;
+}
+
+@media ((min-width:576px) and (max-width:768px)) {
+    .container_inicio {
+        padding-top: 145px;
+    }
+}
+
+@media(max-width:575px) {
+    .container_inicio {
+        padding-top: 190px;
+    }
+}
+
+
+/*carrusel*/
+
+.container_carrousel {
+    width: 100%;
+    box-sizing: content-box;
+}
+
+.container_img_carrusel {
+    height: 350px;
+}
+
+
+/*CATEGORIAS*/
+
+.container_categorias {
+    box-shadow: 0px 0px 15px 10px black;
+}
+
+.container_img_categorias {
+    transition: 1s;
+}
+
+.container_img_categorias:hover {
+    scale: 1.2;
+}
+
+
+/*RESPONSIVIDAD carrusel*/
+
+@media (max-width:767px) {
+    .container_img_carrusel {
+        width: auto;
+        height: 150px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .container_img_carrusel {
+        width: auto;
+        height: 225px;
+    }
+}
+
+
+/*carrusel de productos*/
+
+.container_carrusel_producto {
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+
+/*wave debajo del carrusel de productos*/
+
+.path-0 {
+    animation: pathAnim-0 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pathAnim-0 {
+    0% {
+        d: path("M 0,400 C 0,400 0,200 0,200 C 84.83846153846156,173.45128205128205 169.67692307692312,146.9025641025641 245,142 C 320.3230769230769,137.0974358974359 386.13076923076926,153.84102564102562 475,161 C 563.8692307692307,168.15897435897438 675.8,165.73333333333332 751,163 C 826.2,160.26666666666668 864.6692307692308,157.22564102564104 939,173 C 1013.3307692307692,188.77435897435896 1123.5230769230768,223.36410256410258 1213,231 C 1302.4769230769232,238.63589743589742 1371.2384615384617,219.3179487179487 1440,200 C 1440,200 1440,400 1440,400 Z");
+    }
+    25% {
+        d: path("M 0,400 C 0,400 0,200 0,200 C 101.82307692307694,183.6153846153846 203.64615384615388,167.23076923076923 273,168 C 342.3538461538461,168.76923076923077 379.2384615384615,186.6923076923077 463,176 C 546.7615384615385,165.3076923076923 677.4000000000001,125.99999999999997 758,138 C 838.5999999999999,150.00000000000003 869.1615384615385,213.30769230769235 934,225 C 998.8384615384615,236.69230769230765 1097.9538461538464,196.76923076923077 1188,184 C 1278.0461538461536,171.23076923076923 1359.0230769230768,185.6153846153846 1440,200 C 1440,200 1440,400 1440,400 Z");
+    }
+    50% {
+        d: path("M 0,400 C 0,400 0,200 0,200 C 95.18461538461537,200.2025641025641 190.36923076923074,200.40512820512822 270,204 C 349.63076923076926,207.59487179487178 413.70769230769235,214.58205128205128 481,208 C 548.2923076923076,201.41794871794872 618.8,181.26666666666665 711,187 C 803.2,192.73333333333335 917.0923076923079,224.35128205128206 999,217 C 1080.907692307692,209.64871794871794 1130.8307692307692,163.32820512820513 1199,154 C 1267.1692307692308,144.67179487179487 1353.5846153846155,172.33589743589744 1440,200 C 1440,200 1440,400 1440,400 Z");
+    }
+    75% {
+        d: path("M 0,400 C 0,400 0,200 0,200 C 88.38717948717951,243.14102564102564 176.77435897435902,286.28205128205127 258,266 C 339.225641025641,245.7179487179487 413.2897435897436,162.01282051282047 496,159 C 578.7102564102564,155.98717948717953 670.0666666666667,233.66666666666669 754,245 C 837.9333333333333,256.3333333333333 914.4435897435899,201.32051282051285 976,196 C 1037.5564102564101,190.67948717948715 1084.1589743589743,235.05128205128204 1159,244 C 1233.8410256410257,252.94871794871796 1336.9205128205128,226.47435897435898 1440,200 C 1440,200 1440,400 1440,400 Z");
+    }
+    100% {
+        d: path("M 0,400 C 0,400 0,200 0,200 C 84.83846153846156,173.45128205128205 169.67692307692312,146.9025641025641 245,142 C 320.3230769230769,137.0974358974359 386.13076923076926,153.84102564102562 475,161 C 563.8692307692307,168.15897435897438 675.8,165.73333333333332 751,163 C 826.2,160.26666666666668 864.6692307692308,157.22564102564104 939,173 C 1013.3307692307692,188.77435897435896 1123.5230769230768,223.36410256410258 1213,231 C 1302.4769230769232,238.63589743589742 1371.2384615384617,219.3179487179487 1440,200 C 1440,200 1440,400 1440,400 Z");
+    }
+}
+
+
+/*Nosotros*/
+
+
+/*Contacto*/
+
+.container_contacto {
+    background: linear-gradient(to bottom, white, rgb(129, 169, 255), white);
+}
+
+.container_img_form img {
+    width: 100%;
+    height: auto;
+}
+
+.container_form {
+    background: rgba(23, 98, 255, 0.41);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.3px);
+    -webkit-backdrop-filter: blur(10.3px);
+}
+
+.container_form textarea {
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.container_form button {
+    font-size: 2vw;
+}
+
+
+/*footer*/
+
+footer {
+    background: linear-gradient(to top, #000000, #cee1e5);
+}
+
+
+/**************************************INICIAR_SESION.PHP********************************************/
+
+.container_body {
+    height: 100vh;
+}
+
+.container_iniciar_sesion {
+    background: linear-gradient(to top, #cee1e5, #28434a50, #cee1e5);
+    padding-top: 75px;
+}
+
+@media ((min-width:576px) and (max-width:768px)) {
+    .container_iniciar_sesion {
+        padding-top: 145px;
+    }
+}
+
+@media(max-width:575px) {
+    .container_iniciar_sesion {
+        padding-top: 190px;
+    }
+}
+
+.container_form_iniciar_sesion img {
+    width: 100%;
+    height: auto;
+}
+
+.container_form_iniciar_sesion {
+    background: rgba(23, 96, 255, 0.199);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.3px);
+    -webkit-backdrop-filter: blur(10.3px);
+}
+
+.container_form_iniciar_sesion button {
+    font-size: 2vw;
+}
+
+.container_form_iniciar_sesion .p1,
+.container_form_iniciar_sesion .p2 {
+    font-size: 13px;
+}
+
+
+/**************************************PRODUCTOS_ALIMENTOS.PHP********************************************/
+
+.container_body_prod_ali {
+    min-height: 100vh;
+    background: linear-gradient(to top, #cee1e5, #28434a50, #cee1e5);
+}
+
+.container_prod_ali {
+    padding-top: 85px;
+}
+
+@media ((min-width:576px) and (max-width:768px)) {
+    .container_prod_ali {
+        padding-top: 145px;
+    }
+}
+
+@media(max-width:575px) {
+    .container_prod_ali {
+        padding-top: 190px;
+    }
+}
+
+.cotainer_card {
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+.cotainer_card img {
+    min-height: 370px;
+    max-height: 370px;
+}
+
+
+/**************************************productos_alimentos_descripcion.php*******************************/
+
+.container_body_prod_ali_descripcion {
+    min-height: 100vh;
+    background: linear-gradient(to top, #cee1e5, #28434a50, #cee1e5);
+}
+
+.container_prod_ali_descripcion {
+    padding-top: 85px;
+}
+
+@media ((min-width:576px) and (max-width:768px)) {
+    .container_prod_ali_descripcion {
+        padding-top: 145px;
+    }
+}
+
+@media(max-width:575px) {
+    .container_prod_ali_descripcion {
+        padding-top: 190px;
+    }
+}
+
+.container_img_producto {
+    min-width: 100px;
+    max-width: 245x;
+}
+
+
+/**************************************Registrar_usuario_nuevo.php***************************************/
+
+.container_condicion_registro {
+    font-size: 13px;
+}
+
+
+/**************************************Crud_principal.php************************************************/
+
+.container_body_crup_principal {
+    background: linear-gradient(to top, #cee1e585, #28434a7e, #cee1e585);
+}
+
+.container_titulo_crud {
+    background: radial-gradient(ellipse, rgba(0, 150, 55, 0.397) 35%, rgb(17, 56, 52));
+    font-size: 2vw;
+}
+
+
+/*Botones de los cruds*/
+
+.container_nav_crud p {
+    font-size: 1.5vw;
+}
+
+.container_nav_crud {
+    top: 90px;
+    font-size: 2vw;
+}
+
+
+/*tabla crud*/
+
+.container_tabla_crud_prod {
+    padding-top: 230px;
+}
+
+.container_form_agregar_producto {
+    padding-top: 230px;
+}
+
+@media(max-width:575px) {
+    .container_nav_crud {
+        padding-top: 100px;
+    }
+    .container_tabla_crud_prod {
+        padding-top: 280px;
+    }
+    .container_form_agregar_producto {
+        padding-top: 25px;
+    }
+}
+
+@media(min-width:575px) and (max-width:767px) {
+    .container_nav_crud {
+        padding-top: 30px;
+    }
+}
+
+table {
+    background: radial-gradient(ellipse, rgb(255, 255, 255) 35%, rgb(180, 189, 188));
+}
+
+
+/*thead*/
+
+.titulo_tabla {
+    font-size: 3vw;
+    padding-bottom: 20px;
+}
+
+.cabecera_tabla {
+    background: radial-gradient(ellipse, rgba(0, 150, 55, 0.397) 35%, rgb(17, 56, 52));
+    font-size: 1.2vw;
+}
+
+
+/*tbody*/
+
+.text_tabla_body {
+    font-size: 1.3vw;
+}
+
+
+/*form agregrar producto*/
+
+.container_form_agregar_prod {
+    background: rgba(0, 150, 55, 0.397);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.3px);
+    -webkit-backdrop-filter: blur(10.3px);
+    padding-bottom: 10px;
+}
+
+
+/**********************************Producto_modificado.php************************************************/
+
+.container_body_modificar_producto {
+    background: linear-gradient(to top, #cee1e585, #28434a7e, #cee1e585);
+}
+
+.container_form_modificar_producto {
+    padding-top: 90px;
+}
+
+@media(max-width:575px) {
+    .container_form_modificar_producto {
+        padding-top: 180px;
+    }
+}
+
+@media(min-width:576px) and (max-width:767px) {
+    .container_form_modificar_producto {
+        padding-top: 130px;
+    }
+}
+
+
+/*form modificar producto*/
+
+.container_form_modificar_prod {
+    background: rgba(0, 150, 55, 0.397);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.3px);
+    -webkit-backdrop-filter: blur(10.3px);
+    padding-bottom: 10px;
+}
+
+.form_cat_prov_text {
+    font-size: 13px;
+}
